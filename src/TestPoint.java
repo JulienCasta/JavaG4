@@ -16,7 +16,5 @@ public class TestPoint {
         System.out.println("Point 2 :"+p1);
         System.out.println("Point 3 :"+p2);
 
-
-
     }
 }
