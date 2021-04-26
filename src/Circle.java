@@ -1,35 +1,45 @@
 public class Circle {
-
-    private double radius;
     private Point center;
+    private double radius;
 
-    public Circle(Point x, int radius){
-        this.center = x;
+    Circle(Point center, double radius) {
+        this.center = center;
         this.radius = radius;
-    }
-
-    public double perimetre() {
-
-        return 2*Math.PI*radius;
-    }
-
-    public double getArea(){
-        return Math.PI*radius*radius;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public Point getCenter() {
-        return center;
     }
 
     public void setCenter(Point center) {
         this.center = center;
     }
 
-    public void setRadius(int radius) {
+    public Point getCenter() {
+        return center;
+    }
+
+    public void setRadius(double radius) {
         this.radius = radius;
+    }
+
+    public double getY() {
+        return radius;
+    }
+
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
+    }
+
+    public boolean IsPointInside(Point p) {
+        if(){
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return "("+center.getX()+","+center.getY()+","+radius+")";
     }
 }
