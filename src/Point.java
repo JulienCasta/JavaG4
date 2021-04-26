@@ -18,5 +18,26 @@ public class Point {
     public void setY(float y) {
         this.y = y;
     }
-    Point
+
+    public Point(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public Point() {
+        this(DFL_X,DFL_Y);
+    }
+
+    public void move(double x, double y){
+        this.x += x;
+        this.y += y;
+    }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }
