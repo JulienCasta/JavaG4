@@ -31,8 +31,8 @@ public class Circle {
         return 2 * Math.PI * radius;
     }
 
-    public boolean IsPointInside(Point p) {
-        if(){
+    public boolean isPointInside(Point p) {
+        if(p.getDistance(center.getX(), center.getY()) == radius){
             return true;
         }
         return false;
